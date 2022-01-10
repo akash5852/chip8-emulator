@@ -1,4 +1,4 @@
-//Akash Sharma 
+//Akash Sharma
 #include <cstdint>
 #include <chrono>
 #include <random>
@@ -6,10 +6,9 @@
 class Chip8
 {
 
-
 public:
 	Chip8();
-	void LoadROM(char const* filename);
+	void LoadROM(char const *filename);
 	void Cycle();
 
 private:
@@ -21,8 +20,7 @@ private:
 	// Do nothing
 	void OP_NULL();
 
-
-    // Do nothing
+	// Do nothing
 	void OP_NULL();
 
 	// CLS
@@ -127,28 +125,27 @@ private:
 	// LD Vx, [I]
 	void OP_Fx65();
 
-
-    //16 registers 
-    uint8_t registers[16]{};
-    //4k of memory
+	//16 registers
+	uint8_t registers[16]{};
+	//4k of memory
 	uint8_t memory[4096]{};
-    //index register
+	//index register
 	uint16_t index{};
-    //program counter
+	//program counter
 	uint16_t pc{};
-    //16-level stack
+	//16-level stack
 	uint16_t stack[16]{};
-    //8-bit stack pointer
+	//8-bit stack pointer
 	uint8_t sp{};
-    //8-bit delay timer
+	//8-bit delay timer
 	uint8_t delayTimer{};
-    //8-bit sound timer
+	//8-bit sound timer
 	uint8_t soundTimer{};
-    //16 input keys
+	//16 input keys
 	uint8_t keypad[16]{};
-    //64x32 monochrome display
+	//64x32 monochrome display
 	uint32_t video[64 * 32]{};
-    //32 opcodes
+	//32 opcodes
 	uint16_t opcode;
 
 	std::default_random_engine randGen;
