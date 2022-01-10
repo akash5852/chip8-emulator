@@ -1,3 +1,6 @@
+//Akash Sharma
+//Special Thanks to Austin Morlan for the tutorial
+
 #include "Platform.hpp"
 #include <SDL2/SDL.h>
 
