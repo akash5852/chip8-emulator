@@ -1,3 +1,6 @@
+//Akash Sharma
+//Special Thanks to Austin for the tutorial
+
 #include <fstream>
 #include "Chip8.hpp"
 #include <chrono>
