@@ -121,6 +121,30 @@ void Chip8::LoadROM(char const *filename)
 	}
 }
 
+void Chip8::Cycle()
+{
+	// Fetch
+	opcode = (memory[pc] << 8u) | memory[pc + 1];
+
+	// Increment the PC before we execute anything
+	pc += 2;
+
+	// Decode and Execute
+	((*this).*(table[(opcode & 0xF000u) >> 12u]))();
+
+	// Decrement the delay timer if it's been set
+	if (delayTimer > 0)
+	{
+		--delayTimer;
+	}
+
+	// Decrement the sound timer if it's been set
+	if (soundTimer > 0)
+	{
+		--soundTimer;
+	}
+}
+
 void Chip8::Table0()
 {
 	((*this).*(table0[opcode & 0x000Fu]))();

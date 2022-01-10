@@ -10,7 +10,7 @@ class Chip8
 public:
 	Chip8();
 	void LoadROM(char const* filename);
-
+	void Cycle();
 
 private:
 	void Table0();
