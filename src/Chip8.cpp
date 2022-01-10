@@ -1,5 +1,5 @@
 //Akash Sharma
-//Special Thanks to Austin for the tutorial
+//Special Thanks to Austin Morlan for the tutorial
 
 #include <fstream>
 #include "Chip8.hpp"
