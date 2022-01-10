@@ -76,7 +76,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-I have always been fascinated about emulators, and they are a big reason I got into computers in the first place. I wanted a way to apply my skills as a Computer Engineer, and came to the conclusion to create an emulator. I want to create a gameboy emulator in the future, but for now I started off small with a CHIP-8 emulator instead, only having 32 Opcodes to worry about. I came across Austin Morlan's guide on how to achieve this, and created my first emulator.
+I have always been fascinated about emulators, and they are a big reason I got into computers in the first place. I wanted a way to apply my skills as a Computer Engineer, and came to the conclusion to create an emulator. I want to create a gameboy emulator in the future, but for now I started off small with a CHIP-8 emulator instead, only having 34 Opcodes to worry about. I came across Austin Morlan's guide on how to achieve this, and created my first emulator.
 
 ## Getting Started
 
