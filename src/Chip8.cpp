@@ -1,5 +1,5 @@
 #include <fstream>
-#include "Chip8.h"
+#include "Chip8.hpp"
 #include <chrono>
 #include <random>
 #include <cstdint>

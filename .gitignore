@@ -1,1 +1,5 @@
-#.vscode
+*.vscode
+*include
+*src/lib
+*src/include
+*SDL2.dll

@@ -11,6 +11,9 @@ public:
 	void LoadROM(char const *filename);
 	void Cycle();
 
+	uint8_t keypad[16]{};
+	uint32_t video[32 * 16]{};
+
 private:
 	void Table0();
 	void Table8();
@@ -141,10 +144,6 @@ private:
 	uint8_t delayTimer{};
 	//8-bit sound timer
 	uint8_t soundTimer{};
-	//16 input keys
-	uint8_t keypad[16]{};
-	//64x32 monochrome display
-	uint32_t video[64 * 32]{};
 	//32 opcodes
 	uint16_t opcode;
 

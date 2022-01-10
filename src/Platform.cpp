@@ -1,4 +1,4 @@
-#include "Platform.h"
+#include "Platform.hpp"
 #include <SDL2/SDL.h>
 
 Platform::Platform(char const* title, int windowWidth, int windowHeight, int textureWidth, int textureHeight)
