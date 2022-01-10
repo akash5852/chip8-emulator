@@ -1,3 +1,6 @@
+//Akash Sharma
+//Special Thanks to Austin Morlan for the tutorial
+
 #include <cstdint>
 
 class SDL_Window;
