@@ -13,6 +13,15 @@ public:
 
 
 private:
+	void Table0();
+	void Table8();
+	void TableE();
+	void TableF();
+
+	// Do nothing
+	void OP_NULL();
+
+
     // Do nothing
 	void OP_NULL();
 
@@ -145,5 +154,10 @@ private:
 	std::default_random_engine randGen;
 	std::uniform_int_distribution<uint8_t> randByte;
 
-
+	typedef void (Chip8::*Chip8Func)();
+	Chip8Func table[0xF + 1]{&Chip8::OP_NULL};
+	Chip8Func table0[0xE + 1]{&Chip8::OP_NULL};
+	Chip8Func table8[0xE + 1]{&Chip8::OP_NULL};
+	Chip8Func tableE[0xE + 1]{&Chip8::OP_NULL};
+	Chip8Func tableF[0x65 + 1]{&Chip8::OP_NULL};
 };
