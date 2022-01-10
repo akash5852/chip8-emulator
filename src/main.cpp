@@ -1,3 +1,6 @@
+//Akash Sharma
+//Special Thanks to Austin Morlan for the tutorial
+
 #include "Chip8.hpp"
 #include "Platform.hpp"
 #include <chrono>
